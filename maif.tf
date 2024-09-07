@@ -1,7 +1,7 @@
 resource "aws_instance" "dev" {
-  ami = var.ami
-  instance_type = var.type
-  key_name = var.key
+  ami = "ami-0888ba30fd446b771"
+  instance_type = "t2.micro"
+  key_name = "key1"
    tags = {
     Name  = "DevServer"  
   }
